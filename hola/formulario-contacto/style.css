@@ -1,0 +1,73 @@
+body {
+    background: linear-gradient(90deg, rgb(90, 72, 66) 0%, rgb(123, 95, 87) 31%, rgb(135, 108, 101) 100%);
+    padding: 10px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content:center;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    background-color: rgb(145, 32, 18);
+    color:white;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    width: 180px;
+    height: 40px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+input {
+    box-sizing: border-box;
+    background-color: rgb(145, 32, 18);
+    border-radius: 10px;
+    margin-top: 10px;
+    color:white;
+
+}
+
+label {
+    box-sizing: border-box;
+    background-color: rgb(145, 32, 18);
+    border-radius: 10px;
+    margin-top: 10px;
+    color:white;
+}
+
+textarea {
+    box-sizing: border-box;
+    background-color: rgb(145, 32, 18);
+    border-radius: 10px;
+    margin-top: 10px;
+    color:white;
+}
+
+button {
+    box-sizing: border-box;
+    background-color: rgba(241, 12, 12, 0.112);
+    border-radius: 10px;
+    margin-top: 10px;
+    color:white;
+}
+
+span {
+    box-sizing: border-box;
+    background-color: rgb(11, 125, 28);
+    border-radius: 10px;
+    margin-top: 10px;
+    color:white;
+}
+
+Container {
+    border-radius: 10px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    width: 300px;
+    height: 400px;
+}
