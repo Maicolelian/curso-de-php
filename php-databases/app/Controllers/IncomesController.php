@@ -19,7 +19,7 @@ class IncomesController
         $stmt = $this->connection->prepare("SELECT * FROM incomes");
         $stmt->execute();
 
-        $results = $stmt->fetacAll();
+        $results = $stmt->fetchAll();
 
         require("../resources/views/incomes/index.php");
 
@@ -43,7 +43,7 @@ class IncomesController
 
         $stmt->execute();
 
-       header("location: incomes");
+        header("location: incomes");
 
     }
 
@@ -75,7 +75,7 @@ class IncomesController
         description = :description
         WHERW id=:id;");
 
-    $stmt->execute([
+        $stmt->execute([
         ":id" => $id,
         ":payment_method" => $data["payment_method"],
         ":type" => $data["type"],

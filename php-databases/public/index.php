@@ -2,8 +2,8 @@
 
 require("../vendor/autoload.php");
 
-use App\Controller\IncomesController;
-use App\Controller\WithdrawalsController;
+use App\Controllers\IncomesController;
+use App\Controllers\WithdrawalsController;
 use Router\RouterHander;
 
 // obtener la URL
@@ -11,7 +11,7 @@ $slug = $_GET["slug"] ?? "";
 $slug = explode("/", $slug);
 
 $resource = $slug[0] == "" ? "/" : $slug[0];
-$id = $slog[1] ?? null;
+$id = $slug[1] ?? null;
 
 // instancia del router
 
