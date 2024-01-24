@@ -29,6 +29,16 @@ class DemoController extends Controller
         return view('demo',compact('data'));
     } */
 
+    public function get()
+    {
+        try {
+            $data = Peliculas::get();
+            return response()->json($data, 200);
+        } catch (\Throwable $th) {
+            return response()->json(['error' => $th->getMessage()], 500);
+        }
+    }
+
     public function create(Request $request)
     {
         try {

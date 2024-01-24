@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('nombre', 255);
             $table->string('genero', 255);
             $table->string('lenguaje', 255);
-            $table->string('titulo original', 255);
+            $table->string('titulo_original', 255);
             $table->text('resumen');
             $table->string('poster', 255);
             $table->timestamps();

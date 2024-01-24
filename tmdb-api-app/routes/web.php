@@ -22,7 +22,7 @@ Route::get('/demo', [DemoController::class, 'demo'])->name('demo');
 
 Route::prefix('v1/pelis')->group(function () 
 {
-    Route::get('/demo', [DemoController::class, 'demo']);
+    Route::get('/list', [DemoController::class, 'get']);
     Route::post('/create', [DemoController::class, 'create']);
     Route::get('/getById/{id}', [DemoController::class, 'getById']);
     Route::put('/update/{id}', [DemoController::class, 'update']);

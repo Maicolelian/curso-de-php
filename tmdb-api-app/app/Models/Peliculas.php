@@ -9,13 +9,13 @@ class Peliculas extends Model
 {
     use HasFactory;
 
-    protected $table = "laravelpelis";
+    protected $table = "pelis";
 
     protected $fillable = [
         'nombre',
         'genero',
         'lenguaje',
-        'titulo original',
+        'titulo_original',
         'resumen',
         'poster'
     ];
